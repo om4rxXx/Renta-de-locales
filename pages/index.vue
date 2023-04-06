@@ -3,7 +3,7 @@
     <v-navigation-drawer app>
       <v-list-item class="text-center my-1 py-1">
         <v-list-item-content>
-          <v-list-item-title class="text-h6"> Handra </v-list-item-title>
+          <v-list-item-title class="text-h6"> Handras </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
