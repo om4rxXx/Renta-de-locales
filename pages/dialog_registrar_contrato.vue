@@ -1,78 +1,6 @@
 <template>
   <v-app>
-
-
-    <v-navigation-drawer app>
-      <v-list-item class="text-center my-1 py-1">
-        <v-list-item-content>
-          <v-list-item-title class="text-h6"> Handra </v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list dense nav active-class="deep-purple--text text--accent-4">
-        <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
-          <v-list-item-title class="font-weight-bold">Inicio</v-list-item-title>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Dashboard</v-list-item-title>
-          </v-list-item>
-          <v-list-item-title class="font-weight-bold">Registro</v-list-item-title>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-folder-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title class="font-weight-bold">Local</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title class="font-weight-bold">Cliente</v-list-item-title>
-          </v-list-item>
-          <v-list-item-title class="font-weight-bold">Catálogo</v-list-item-title>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-list-box</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title class="font-weight-bold">Inventario</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-hammer-wrench</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title class="font-weight-bold">Mantenimiento</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item-title class="font-weight-bold">Información</v-list-item-title>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account-circle</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title class="font-weight-bold">Administrador</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account-box-multiple</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title class="font-weight-bold">Clientes</v-list-item-title>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home-group</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title class="font-weight-bold">Locales</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-      <template v-slot:append>
-        <div class="pa-2">
-          <v-btn block> Logout <v-icon dark right> mdi-logout </v-icon></v-btn>
-        </div>
-      </template>
-    </v-navigation-drawer>
-
+    <Nav></Nav>
     <v-main>
       <v-row justify="center">
         <v-dialog v-model="dialog" persistent max-width="80%">
@@ -229,6 +157,8 @@
 </template>
 
 <script>
+import Nav from "../components/Nav.vue";
+
 export default {
   data: () => ({
     dialog: false,
