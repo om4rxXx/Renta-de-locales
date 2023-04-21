@@ -184,6 +184,20 @@
         Reset
       </v-btn>
     </template>
+    <template v-slot:item.estado="{ item }">
+        <v-switch      
+        v-model="item.estado"
+                inset
+                v-if = "item.estado == false"
+        ></v-switch>
+        <v-switch
+          v-model="item.estado"
+          inset
+          v-else-if = "item.estado == true"
+          color = #4CAF50
+          disabled
+                ></v-switch>
+      </template>
   </v-data-table>
 
         </v-col>
@@ -193,7 +207,17 @@
   
 </template>
  
+<style>
+.v-input--switch--inset,
+.v-input--switch:not(.v-input--switch--flat) 
+ .v-input--switch__thumb {
+  color:  #FF9800
+  
+}
+.theme--light.v-input--switch .v-input--switch__track {
+  color: #FF9800
 
+}</style>
 <script>
 import Nav from "../components/Nav.vue";
 import Header from "../components/Header.vue";
