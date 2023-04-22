@@ -15,6 +15,7 @@
           <v-data-table
     :headers="headers"
     :items="mantenimientos"
+    :search="search"
     sort-by="id"
     class="elevation-1"
   >
@@ -39,7 +40,7 @@
                   Agregar
             </v-btn>
           </template>
-          <v-card>
+          <v-card rounded='xl'>
             <v-card-title>
               <span class="text-h5">{{ formTitle }}</span>
             </v-card-title>
@@ -64,7 +65,7 @@
                   >
                     <v-text-field
                       v-model="editedItem.descripcion"
-                      label="Descrpción"
+                      label="Descripción"
                     ></v-text-field>
                   </v-col>
                   <v-col
@@ -148,6 +149,17 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+      <v-text-field
+        v-model="search"
+        append-icon="mdi-magnify"
+        label="Buscar mantenimiento"
+        single-line
+        hide-details
+      ></v-text-field>
         <v-dialog v-model="dialogDelete" max-width="500px">
           <v-card>
             <v-card-title class="text-h5">¿Seguro de eliminar el registro?</v-card-title>
@@ -160,6 +172,7 @@
           </v-card>
         </v-dialog>
       </v-toolbar>
+      
     </template>
     <template v-slot:item.actions="{ item }">
       <v-icon
@@ -217,7 +230,8 @@
 .theme--light.v-input--switch .v-input--switch__track {
   color: #FF9800
 
-}</style>
+}
+</style>
 <script>
 import Nav from "../components/Nav.vue";
 import Header from "../components/Header.vue";
@@ -233,7 +247,7 @@ import Header from "../components/Header.vue";
     },
       dialog: false,
       dialogDelete: false,
-      
+      search:'',
       headers: [
           {
             text: 'ID',
