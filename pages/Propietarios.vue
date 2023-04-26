@@ -4,7 +4,7 @@
     <main>
       <v-main>
         <div class="d-flex justify-start mt-15 ml-10">
-          <h1>Arrendatarios</h1>
+          <h1>Propietarios</h1>
         </div>
         <v-row class="d-flex justify-start mt-10 mx-4">
           <v-card class="mx-4 my-2 mr-10 rounded-xl" width="280" height="325">
@@ -234,7 +234,7 @@
               </div>
               <div class="my-0">
                 <v-card-actions>
-                  <v-menu transition="scroll-y-transition" color="primary">
+                  <v-menu offset-y color="primary">
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn
                         class="my-0"

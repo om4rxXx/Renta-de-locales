@@ -30,7 +30,10 @@
         active-class="purple-gradient white--text"
       >
         <v-list-item-title class="font-weight-bold">Inicio</v-list-item-title>
-        <v-list-item>
+        <v-list-item
+          href="/
+        "
+        >
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
@@ -41,25 +44,27 @@
           <v-list-item-icon>
             <v-icon>mdi-folder-home</v-icon>
           </v-list-item-icon>
-          <v-list-item-title class="font-weight-bold">Local</v-list-item-title>
+          <v-list-item-title class="font-weight-bold"
+            >Propiedad</v-list-item-title
+          >
         </v-list-item>
         <v-list-item>
           <v-list-item-icon>
             <v-icon>mdi-account</v-icon>
           </v-list-item-icon>
           <v-list-item-title class="font-weight-bold"
-            >Cliente</v-list-item-title
+            >Arrendatario</v-list-item-title
+          >
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-icon>
+            <v-icon>mdi-account</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title class="font-weight-bold"
+            >Propietario</v-list-item-title
           >
         </v-list-item>
         <v-list-item-title class="font-weight-bold">Catálogo</v-list-item-title>
-        <v-list-item>
-          <v-list-item-icon>
-            <v-icon>mdi-list-box</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title class="font-weight-bold"
-            >Inventario</v-list-item-title
-          >
-        </v-list-item>
         <v-list-item>
           <v-list-item-icon>
             <v-icon>mdi-hammer-wrench</v-icon>
@@ -68,39 +73,49 @@
             >Mantenimiento</v-list-item-title
           >
         </v-list-item>
+        <v-list-item>
+          <v-list-item-icon>
+            <v-icon>mdi-book</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title class="font-weight-bold"
+            >Contrato</v-list-item-title
+          >
+        </v-list-item>
 
         <v-list-item-title class="font-weight-bold"
           >Información</v-list-item-title
         >
-        <v-list-item>
+        <v-list-item href="/Propietarios">
           <v-list-item-icon>
-            <v-icon>mdi-account-circle</v-icon>
+            <v-icon>mdi-account-group</v-icon>
           </v-list-item-icon>
           <v-list-item-title class="font-weight-bold"
-            >Administrador</v-list-item-title
+            >Usuario</v-list-item-title
           >
         </v-list-item>
-        <v-list-item>
+        <v-list-item href="/arrendatarios">
           <v-list-item-icon>
             <v-icon>mdi-account-box-multiple</v-icon>
           </v-list-item-icon>
           <v-list-item-title class="font-weight-bold"
-            >Clientes</v-list-item-title
+            >Arrendatarios</v-list-item-title
           >
         </v-list-item>
-        <v-list-item>
+        <v-list-item href="/Propietarios">
           <v-list-item-icon>
             <v-icon>mdi-home-group</v-icon>
           </v-list-item-icon>
           <v-list-item-title class="font-weight-bold"
-            >Locales</v-list-item-title
+            >Propietarios</v-list-item-title
           >
         </v-list-item>
       </v-list-item-group>
     </v-list>
     <template v-slot:append>
       <div class="pa-2">
-        <v-btn block> Logout <v-icon dark right> mdi-logout </v-icon></v-btn>
+        <v-btn flat elevation="0" block color="white">
+          Logout <v-icon dark right> mdi-logout </v-icon></v-btn
+        >
       </div>
     </template>
   </v-navigation-drawer>
