@@ -28,9 +28,51 @@
                 </v-list-item-icon>
               </v-list-item>
               <v-list-item class="d-flex justify-center">
-                <v-btn class="ma-2" icon fab absolute color="black">
+
+
+                <v-dialog v-model="dialog" persistent max-width="80%">
+          <template v-slot:activator="{ on, attrs }">
+            
+            <v-btn class="ma-2" icon fab absolute color="black"  dark v-bind="attrs" v-on="on">
                   <v-icon x-large>mdi-file-sign</v-icon>
-                </v-btn></v-list-item
+                </v-btn>
+                
+          </template>
+
+          <v-card elevation='10' rounded='xl'>
+            <v-card-title>
+             
+              <h1 style="margin: 20px;"> Contrato</h1>
+              <v-divider></v-divider>
+              <div class="mx-auto text-center">
+                <v-btn rounded color="red" dark @click="dialog = false" style="margin : 10px">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn>
+              </div>
+            </v-card-title>
+
+            <div justify="center" align="center">
+              <img  src="~/assets/image.png" alt="John" />
+            </div>
+            
+           
+              <div class="mx-auto text-center">
+                <v-btn rounded color="red" dark @click="dialog = false" style="margin : 10px">
+                  <v-icon>mdi-close</v-icon>
+                  Cerrar
+                </v-btn>
+              </div>
+          </v-card>
+        </v-dialog>
+
+
+
+
+              
+                
+                
+                
+                </v-list-item
               >
             </v-list>
 
@@ -421,7 +463,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    dialog: false,
+
+  }),}
 </script>
 
 <style>

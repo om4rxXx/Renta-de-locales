@@ -48,15 +48,7 @@ export default {
     dialog: false,
 
   }),
-  dates: {
-    date: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10),
-    date2: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10),
-    date3: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10),
-    menu: false,
-    menu2: false,
-    menu3: false,
 
-  },
 }
 
 
