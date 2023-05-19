@@ -2,6 +2,7 @@
   <v-app>
     <Nav />
     <v-main>
+      <Header></Header>
       <v-row class="d-flex justify-space-center mt-15 ml-4">
         <v-col
           ><v-card class="mb-6 rounded-xl">

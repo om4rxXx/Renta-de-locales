@@ -2,6 +2,7 @@
   <v-app>
     <Nav></Nav>
     <main>
+      <Header></Header>
       <v-main>
         <div class="d-flex justify-start mt-15 ml-10">
           <h1>Arrendatarios</h1>

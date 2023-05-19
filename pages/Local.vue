@@ -2,6 +2,7 @@
   <v-app>
     <Nav></Nav>
     <main>
+      <Header></Header>
       <v-main>
         <v-row class="d-flex justify-start mt-10 mx-4">
           <v-col cols="12" sm="12" md="12">

@@ -37,7 +37,7 @@
           <v-list-item-title>Dashboard</v-list-item-title>
         </v-list-item>
         <v-list-item-title class="font-weight-bold">Registro</v-list-item-title>
-        <v-list-item>
+        <v-list-item href="/registro_propiedad">
           <v-list-item-icon>
             <v-icon>mdi-folder-home</v-icon>
           </v-list-item-icon>
@@ -45,7 +45,7 @@
             >Propiedad</v-list-item-title
           >
         </v-list-item>
-        <v-list-item>
+        <v-list-item href="/registro_arrendatario">
           <v-list-item-icon>
             <v-icon>mdi-account</v-icon>
           </v-list-item-icon>
@@ -53,7 +53,7 @@
             >Arrendatario</v-list-item-title
           >
         </v-list-item>
-        <v-list-item>
+        <v-list-item href="/registro_propietario">
           <v-list-item-icon>
             <v-icon>mdi-account</v-icon>
           </v-list-item-icon>
@@ -62,7 +62,7 @@
           >
         </v-list-item>
         <v-list-item-title class="font-weight-bold">Catálogo</v-list-item-title>
-        <v-list-item>
+        <v-list-item href="/tabla_mantenimientos">
           <v-list-item-icon>
             <v-icon>mdi-hammer-wrench</v-icon>
           </v-list-item-icon>
@@ -82,7 +82,7 @@
         <v-list-item-title class="font-weight-bold"
           >Información</v-list-item-title
         >
-        <v-list-item href="/Propietarios">
+        <v-list-item href="........">
           <v-list-item-icon>
             <v-icon>mdi-account-group</v-icon>
           </v-list-item-icon>
