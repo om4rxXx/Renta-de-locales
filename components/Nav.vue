@@ -73,7 +73,7 @@
             >Mantenimiento</v-list-item-title
           >
         </v-list-item>
-        <v-list-item>
+        <v-list-item href="/contratos">
           <v-list-item-icon>
             <v-icon>mdi-book</v-icon>
           </v-list-item-icon>
