@@ -25,10 +25,7 @@
     </v-card>
 
     <v-list dense nav active-class="deep-purple--text text--accent-4">
-      <v-list-item-group
-        v-model="group"
-        active-class="purple-gradient white--text"
-      >
+      <v-list-item-group active-class="purple-gradient white--text">
         <v-list-item-title class="font-weight-bold">Inicio</v-list-item-title>
         <v-list-item
           href="/
@@ -113,7 +110,7 @@
     </v-list>
     <template v-slot:append>
       <div class="pa-2">
-        <v-btn flat elevation="0" block color="white">
+        <v-btn elevation="0" block color="white">
           Logout <v-icon dark right> mdi-logout </v-icon></v-btn
         >
       </div>
@@ -121,7 +118,7 @@
   </v-navigation-drawer>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "Nav",
 };

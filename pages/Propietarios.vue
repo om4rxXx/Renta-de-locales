@@ -98,7 +98,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="Apellido Paterno"
                                 outlined
                                 color="primary"
@@ -106,7 +105,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="Apellido Materno"
                                 outlined
                                 color="primary"
@@ -114,7 +112,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="Teléfono"
                                 outlined
                                 color="primary"
@@ -122,7 +119,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="Dirección"
                                 outlined
                                 color="primary"
@@ -132,7 +128,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="Nombre"
                                 outlined
                                 color="primary"
@@ -140,7 +135,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="Correo"
                                 outlined
                                 color="primary"
@@ -148,7 +142,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="Empresa"
                                 outlined
                                 color="primary"
@@ -156,7 +149,6 @@
                               <v-text-field
                                 rounded
                                 dense
-                                v-model="email"
                                 label="RFC"
                                 outlined
                                 color="primary"
@@ -187,7 +179,6 @@
                                   <v-text-field
                                     rounded
                                     dense
-                                    v-model="email"
                                     label="Comentarios"
                                     outlined
                                     color="primary"
@@ -363,8 +354,12 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
+import Nav from "~/components/Nav.vue";
 export default {
+  components: {
+    Nav,
+  },
   data: () => ({
     reveal: false,
     dialog: false,

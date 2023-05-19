@@ -1098,8 +1098,13 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
+import Nav from "~/components/Nav.vue";
+
 export default {
+  components: {
+    Nav,
+  },
   data: () => ({
     reveal: false,
     dialog: false,

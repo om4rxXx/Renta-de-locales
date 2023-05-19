@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <Nav></Nav>
-
+    <Nav />
     <v-main>
       <v-row class="d-flex justify-space-center mt-15 ml-4">
         <v-col
@@ -126,7 +125,6 @@
                 <v-data-table
                   :headers="headers"
                   :items="desserts"
-                  :item-key="name"
                   hide-default-footer
                   height="420"
                   class="rounded-xl"
@@ -464,7 +462,7 @@
 </template>
 
 <script lang="ts">
-import Nav from "../components/Nav.vue";
+import Nav from "~/components/Nav.vue";
 export default {
   components: {
     Nav,
