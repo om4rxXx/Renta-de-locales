@@ -25,10 +25,7 @@
     </v-card>
 
     <v-list dense nav active-class="deep-purple--text text--accent-4">
-      <v-list-item-group
-        v-model="group"
-        active-class="purple-gradient white--text"
-      >
+      <v-list-item-group active-class="purple-gradient white--text">
         <v-list-item-title class="font-weight-bold">Inicio</v-list-item-title>
         <v-list-item
           href="/
@@ -40,7 +37,7 @@
           <v-list-item-title>Dashboard</v-list-item-title>
         </v-list-item>
         <v-list-item-title class="font-weight-bold">Registro</v-list-item-title>
-        <v-list-item href ="/registro_propiedad">
+        <v-list-item href="/registro_propiedad">
           <v-list-item-icon>
             <v-icon>mdi-folder-home</v-icon>
           </v-list-item-icon>
@@ -48,7 +45,7 @@
             >Propiedad</v-list-item-title
           >
         </v-list-item>
-        <v-list-item href ="/registro_arrendatario">
+        <v-list-item href="/registro_arrendatario">
           <v-list-item-icon>
             <v-icon>mdi-account</v-icon>
           </v-list-item-icon>
@@ -56,7 +53,7 @@
             >Arrendatario</v-list-item-title
           >
         </v-list-item>
-        <v-list-item href ="/registro_propietario">
+        <v-list-item href="/registro_propietario">
           <v-list-item-icon>
             <v-icon>mdi-account</v-icon>
           </v-list-item-icon>
@@ -65,7 +62,7 @@
           >
         </v-list-item>
         <v-list-item-title class="font-weight-bold">Catálogo</v-list-item-title>
-        <v-list-item href ="/tabla_mantenimientos">
+        <v-list-item href="/tabla_mantenimientos">
           <v-list-item-icon>
             <v-icon>mdi-hammer-wrench</v-icon>
           </v-list-item-icon>
@@ -73,7 +70,7 @@
             >Mantenimiento</v-list-item-title
           >
         </v-list-item>
-        <v-list-item href ="/contratos">
+        <v-list-item href="/contratos">
           <v-list-item-icon>
             <v-icon>mdi-book</v-icon>
           </v-list-item-icon>
@@ -113,7 +110,7 @@
     </v-list>
     <template v-slot:append>
       <div class="pa-2">
-        <v-btn flat elevation="0" block color="white">
+        <v-btn elevation="0" block color="white">
           Logout <v-icon dark right> mdi-logout </v-icon></v-btn
         >
       </div>
@@ -121,7 +118,7 @@
   </v-navigation-drawer>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "Nav",
 };

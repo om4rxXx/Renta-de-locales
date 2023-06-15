@@ -2,6 +2,7 @@
   <v-app>
     <Nav></Nav>
     <main>
+      <Header></Header>
       <v-main>
         <v-row class="d-flex justify-start mt-10 mx-4">
           <v-col cols="12" sm="12" md="12">
@@ -50,43 +51,151 @@
             </v-card>
           </v-col>
         </v-row>
-        <v-row class="d-flex justify-start mt-10 mx-4">
-          <v-col cols="12" sm="9" md="9">
-            <v-card class="mx-4 rounded-xl" width="930" height="325">
-              <v-row>
-                <v-col cols="12" lg="5" md="5" sm="5"
-                  ><v-img
-                    height="300"
-                    src="https://2.bp.blogspot.com/-hw2zha6N6nI/T3nYp100HuI/AAAAAAAAKMM/1u2-xYjd5Mw/s1600/Starbucks_Amsterdam_3.jpg"
+        <v-row class="d-flex justify-start mt-3 ml-4">
+          <v-col cols="12" sm="8" md="8">
+            <v-card class="mx-4 rounded-xl">
+              <h1 class="d-flex justify-center">Rentar</h1>
+              <div class="d-flex justify-start mt-5 ml-10">
+                <p>
+                  CARRETERA AGUASCALIENTES- ZACATECAS TENEMOS ESTA OPCION EN
+                  RENTA IDEAL PARA TU NEGOCIO!!CON UNA EXELENTE UBICACION Y UNA
+                  ZONA CON MUCHO POTENCIAL COMERCIAL!!......
+                </p>
+              </div>
+              <div class="d-flex justify-start mt-5 ml-10">
+                <h3>Características generales</h3>
+              </div>
+              <div class="d-flex justify-start mt-3 ml-10">
+                <v-row class="d-flex justify-space-betwee">
+                  <v-col>
+                    <v-list
+                      ><v-list-item>
+                        <v-list-item-icon>
+                          <v-icon>mdi-account</v-icon>
+                        </v-list-item-icon>
+
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            citas.Estetica
+                          </v-list-item-title>
+                        </v-list-item-content> </v-list-item
+                      ><v-list-item>
+                        <v-list-item-icon>
+                          <v-icon>mdi-gmail</v-icon>
+                        </v-list-item-icon>
+
+                        <v-list-item-content>
+                          <v-list-item-title> citas.Medicas </v-list-item-title>
+                        </v-list-item-content> </v-list-item
+                      ><v-list-item>
+                        <v-list-item-icon>
+                          <v-icon>mdi-cellphone</v-icon>
+                        </v-list-item-icon>
+
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            citas.Vacunacion
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list></v-col
+                  >
+                  <v-col>
+                    <v-list
+                      ><v-list-item>
+                        <v-list-item-icon>
+                          <v-icon>mdi-account</v-icon>
+                        </v-list-item-icon>
+
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            citas.Estetica
+                          </v-list-item-title>
+                        </v-list-item-content> </v-list-item
+                      ><v-list-item>
+                        <v-list-item-icon>
+                          <v-icon>mdi-gmail</v-icon>
+                        </v-list-item-icon>
+
+                        <v-list-item-content>
+                          <v-list-item-title> citas.Medicas </v-list-item-title>
+                        </v-list-item-content> </v-list-item
+                      ><v-list-item>
+                        <v-list-item-icon>
+                          <v-icon>mdi-cellphone</v-icon>
+                        </v-list-item-icon>
+
+                        <v-list-item-content>
+                          <v-list-item-title>
+                            citas.Vacunacion
+                          </v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list></v-col
+                  >
+                </v-row>
+              </div>
+              <div class="d-flex justify-start mt-5 ml-10">
+                <h3>Ubicacion</h3>
+              </div>
+              <div class="d-flex justify-center mt-3 mx-10">
+                <v-col>
+                  <v-img
+                    src="https://e7.pngegg.com/pngimages/193/849/png-clipart-foyleside-shopping-centre-square-one-mall-washington-square-carine-glades-shopping-centre-map-foyleside-shopping-centre-square-one-mall.png"
                     style="border-radius: 24px"
-                  ></v-img
-                ></v-col>
-              </v-row>
+                  ></v-img>
+                </v-col>
+              </div>
+              <div class="d-flex justify-start mt-5 ml-10">
+                <h3>Historial de Manteimiento</h3>
+              </div>
+              <v-data-table
+                class="mt-3 mx-4"
+                :headers="headers"
+                :items="desserts"
+                hide-default-footer
+              >
+                <template v-slot:item.name="{ item }">
+                  {{ item.name }}
+                </template>
+                <template v-slot:item.Nombre="{ item }">
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/john.jpg"
+                  ></v-img>
+                </template>
+                <template v-slot:item.calories="{ item }">
+                  <v-chip :color="getColor(item.calories)" dark>
+                    ${{ item.calories }}
+                  </v-chip>
+                </template>
+
+                <template v-slot:no-data>
+                  <v-btn color="primary" @click="initialize"> Reset </v-btn>
+                </template>
+              </v-data-table>
             </v-card>
           </v-col>
-          <v-col cols="12" sm="3" md="3">
-            <v-card class="mr-4 rounded-xl">
-              <v-row class="d-flex justify-center">
-                <v-card-text>
-                  <div class="d-flex justify-center mt-0 text-h6">Rentar</div>
-                  <v-col>
-                    <div class="d-flex justify-space-between my-5">
-                      <div>tarifa mensual:</div>
-                      <div>$7,042 MXN</div>
-                    </div>
-                    <div class="d-flex justify-space-between my-5">
-                      <div>Anticipo minimo:</div>
-                      <div>$ 1,252 MXN</div>
-                    </div>
-                    <div class="d-flex justify-center my-5">
-                      <v-btn color="#5CBBF6" rounded class="ml-2 white--text"
-                        ><v-icon left dark> mdi-plus </v-icon>
-                        Contrato
-                      </v-btn>
-                    </div>
-                  </v-col>
-                </v-card-text>
-              </v-row>
+          <v-col cols="12" sm="4" md="4">
+            <v-card class="rounded-xl mr-9" absolute>
+              <v-card-text>
+                <div class="d-flex justify-center mt-0 text-h6">Rentar</div>
+                <v-col>
+                  <div class="d-flex justify-space-between my-5">
+                    <div>tarifa mensual:</div>
+                    <div>$7,042 MXN</div>
+                  </div>
+                  <div class="d-flex justify-space-between my-5">
+                    <div>Anticipo minimo:</div>
+                    <div>$ 1,252 MXN</div>
+                  </div>
+                  <div class="d-flex justify-center my-5">
+                    <v-btn color="#5CBBF6" rounded class="ml-2 white--text"
+                      ><v-icon left dark> mdi-plus </v-icon>
+                      Contrato
+                    </v-btn>
+                  </div>
+                </v-col>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -95,9 +204,88 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
+import Nav from "~/components/Nav.vue";
 export default {
-  data: () => ({}),
+  components: {
+    Nav,
+  },
+  data() {
+    return {
+      headers: [
+        {
+          text: "Tipo de mantenimento",
+          align: "start",
+          sortable: false,
+          value: "name",
+        },
+        {
+          text: "Descripcion",
+          align: "center",
+          sortable: false,
+          value: "descripcion",
+        },
+        {
+          text: "Precio MXN",
+          value: "calories",
+
+          align: "center",
+        },
+        { text: "Fecha", value: "fat", align: "center" },
+      ],
+      desserts: [
+        {
+          name: "Pintura",
+          calories: 500,
+          fat: "2022/02/12",
+          descripcion: "cosas ocas de locales",
+          carbs: "por vencer",
+        },
+        {
+          name: "Drenaje",
+          calories: 237,
+          fat: "2022/02/12",
+          descripcion: "cosas ocas de locales",
+          carbs: "por vencer",
+        },
+        {
+          name: "Pintura",
+          calories: 262,
+          fat: "2022/02/12",
+          descripcion: "cosas ocas de locales",
+          carbs: "por vencer",
+        },
+        {
+          name: "No se ",
+          calories: 305,
+          fat: "2022/02/12",
+          descripcion: "cosas ocas de locales",
+          carbs: "por vencer",
+        },
+        {
+          name: "cosas de locales",
+          calories: 356,
+          descripcion: "cosas ocas de locales",
+          fat: "2022/02/12",
+          carbs: "por vencer",
+        },
+        {
+          name: "Ductos",
+          calories: 375,
+          fat: "2022/02/12",
+          descripcion: "cosas ocas de locales",
+          carbs: "por vencer",
+        },
+      ],
+    };
+  },
+  methods: {
+    getColor(calories: number) {
+      if (calories > 400) return "green";
+      else if (calories > 200) return "green";
+      else return "green";
+    },
+  },
 };
 </script>
 

@@ -2,6 +2,7 @@
   <v-app>
     <Nav></Nav>
     <main>
+      <Header></Header>
       <v-main>
         <div class="d-flex justify-start mt-15 ml-10">
           <h1>Arrendatarios</h1>
@@ -1098,8 +1099,13 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
+import Nav from "~/components/Nav.vue";
+
 export default {
+  components: {
+    Nav,
+  },
   data: () => ({
     reveal: false,
     dialog: false,

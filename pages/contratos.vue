@@ -2,6 +2,7 @@
   <v-app>
     <Nav></Nav>
     <main>
+      <Header></Header>
       <v-main>
         <div class="d-flex justify-start mt-15 ml-10">
           <h1>Contratos</h1>
@@ -350,6 +351,45 @@
                   <v-btn icon color="red">
                     <v-icon color="red">mdi-trash-can-outline</v-icon>
                   </v-btn>
+                  <v-dialog
+                    v-model="dialog1"
+                    persistent
+                    max-width="400"
+                    class="rounded-xl"
+                  >
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn color="red" icon dark v-bind="attrs" v-on="on">
+                        <v-icon color="red">mdi-trash-can-outline</v-icon>
+                      </v-btn>
+                    </template>
+                    <v-card class="rounded-xl">
+                      <v-card-title class="text-h5">
+                        Esta seuro que desea eliminar el contrato?
+                      </v-card-title>
+                      <v-card-text class="d-flex justify-center">
+                        <v-icon large color="yellow accent-3">
+                          mdi-alert
+                        </v-icon></v-card-text
+                      >
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                          color="yellow accent-4"
+                          text
+                          @click="dialog1 = false"
+                        >
+                          Eliminar
+                        </v-btn>
+                        <v-btn
+                          color="yellow accent-4"
+                          text
+                          @click="dialog1 = false"
+                        >
+                          Cancelar
+                        </v-btn>
+                      </v-card-actions>
+                    </v-card>
+                  </v-dialog>
                 </v-list-item-icon>
 
                 <v-list-item-content class="d-flex justify-center">
@@ -462,12 +502,18 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
+import Nav from "~/components/Nav.vue";
 export default {
+  components: {
+    Nav,
+  },
   data: () => ({
+    reveal: false,
     dialog: false,
-
-  }),}
+    dialog1: false,
+  }),
+};
 </script>
 
 <style>

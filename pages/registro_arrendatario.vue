@@ -3,55 +3,78 @@
     <Nav></Nav>
 
     <v-main>
-    <Header></Header>
+      <Header></Header>
       <v-row class="mx-4" justify="left">
         <v-col>
           <span class="text-h3">Registrar Arrendatario</span>
         </v-col>
       </v-row>
-      <v-row class="mx-auto text-center" style="width: 90%;">
+      <v-row class="mx-auto text-center" style="width: 90%">
         <v-col>
-          <v-card elevation='10' rounded='xl'>
-            <v-card-title>
-            </v-card-title>
+          <v-card elevation="10" rounded="xl">
+            <v-card-title> </v-card-title>
             <v-card-text>
               <v-container>
                 <v-row>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
-                      <h3 style="margin-bottom: 2%;">Arrendatario</h3>
+                      <h3 style="margin-bottom: 2%">Arrendatario</h3>
                     </div>
-                    <v-text-field label="Arrendatario" outlined dense></v-text-field>
+                    <v-text-field
+                      label="Arrendatario"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
-                      <h3 style="margin-bottom: 2%;">Teléfono</h3>
+                      <h3 style="margin-bottom: 2%">Teléfono</h3>
                     </div>
-                    <v-text-field label="Teléfono" outlined dense></v-text-field>
+                    <v-text-field
+                      label="Teléfono"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
-                      <h3 style="margin-bottom: 2%;">Correo Electrónico</h3>
+                      <h3 style="margin-bottom: 2%">Correo Electrónico</h3>
                     </div>
-                    <v-text-field label="Correo Electrónico" outlined dense></v-text-field>
+                    <v-text-field
+                      label="Correo Electrónico"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
-                      <h3 style="margin-bottom: 2%;">RFC</h3>
+                      <h3 style="margin-bottom: 2%">RFC</h3>
                     </div>
                     <v-text-field label="RFC" outlined dense></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
-                      <h3 style="margin-bottom: 2%;">Dirección</h3>
+                      <h3 style="margin-bottom: 2%">Dirección</h3>
                     </div>
-                    <v-text-field label="Dirección" outlined dense></v-text-field>
+                    <v-text-field
+                      label="Dirección"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
-                      <h3 style="margin-bottom: 2%;">Fotos</h3>
+                      <h3 style="margin-bottom: 2%">Fotos</h3>
                     </div>
-                    <v-file-input label="Fotos" outlined multiple state chips hint dense></v-file-input>
+                    <v-file-input
+                      label="Fotos"
+                      outlined
+                      multiple
+                      state
+                      chips
+                      hint
+                      dense
+                    ></v-file-input>
                   </v-col>
                 </v-row>
               </v-container>
@@ -59,13 +82,25 @@
 
             <v-card-actions>
               <div class="mx-auto text-center">
-                <v-btn rounded color="red" dark @click="dialog = false" style="margin : 10px">
+                <v-btn
+                  rounded
+                  color="red"
+                  dark
+                  @click="dialog = false"
+                  style="margin: 10px"
+                >
                   <v-icon>mdi-close</v-icon>
                   Cancelar
                 </v-btn>
               </div>
               <div class="mx-auto text-center">
-                <v-btn rounded color="primary" dark @click="dialog = false" style="margin : 10px ">
+                <v-btn
+                  rounded
+                  color="primary"
+                  dark
+                  @click="dialog = false"
+                  style="margin: 10px"
+                >
                   <v-icon>mdi-plus</v-icon>
                   Guardar
                 </v-btn>
@@ -91,11 +126,10 @@ import Header from "../components/Header.vue";
 export default {
   data: () => ({
     user: {
-      image: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
-      fullName: 'John Doe',
-      email: 'john.doe@doe.com',
+      image: "https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
+      fullName: "John Doe",
+      email: "john.doe@doe.com",
     },
   }),
-}
+};
 </script>
-
