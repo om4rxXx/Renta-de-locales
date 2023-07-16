@@ -21,6 +21,7 @@
                       <h3 style="margin-bottom: 2%">Arrendatario</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Arrendatario"
                       outlined
                       dense
@@ -31,6 +32,7 @@
                       <h3 style="margin-bottom: 2%">Teléfono</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Teléfono"
                       outlined
                       dense
@@ -41,6 +43,7 @@
                       <h3 style="margin-bottom: 2%">Correo Electrónico</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Correo Electrónico"
                       outlined
                       dense
@@ -50,13 +53,19 @@
                     <div class="mx-auto text-left">
                       <h3 style="margin-bottom: 2%">RFC</h3>
                     </div>
-                    <v-text-field label="RFC" outlined dense></v-text-field>
+                    <v-text-field
+                      rounded
+                      label="RFC"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
                       <h3 style="margin-bottom: 2%">Dirección</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Dirección"
                       outlined
                       dense
@@ -67,6 +76,7 @@
                       <h3 style="margin-bottom: 2%">Fotos</h3>
                     </div>
                     <v-file-input
+                      rounded
                       label="Fotos"
                       outlined
                       multiple

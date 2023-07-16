@@ -21,6 +21,7 @@
                     </div>
                     <v-text-field
                       label="Propiedad"
+                      rounded
                       outlined
                       dense
                     ></v-text-field>
@@ -30,6 +31,7 @@
                       <h3 style="margin-bottom: 2%">Tipo de propiedad</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Tipo de propiedad"
                       outlined
                       dense
@@ -40,6 +42,7 @@
                       <h3 style="margin-bottom: 2%">Descripción</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Descripción"
                       outlined
                       dense
@@ -50,6 +53,7 @@
                       <h3 style="margin-bottom: 2%">Ubicación</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Ubicación"
                       outlined
                       dense
@@ -59,13 +63,19 @@
                     <div class="mx-auto text-left">
                       <h3 style="margin-bottom: 2%">Costo $</h3>
                     </div>
-                    <v-text-field label="Costo $" outlined dense></v-text-field>
+                    <v-text-field
+                      rounded
+                      label="Costo $"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
                       <h3 style="margin-bottom: 2%">Anticipo mínimo</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Anticipo mínimo"
                       outlined
                       dense
@@ -76,6 +86,7 @@
                       <h3 style="margin-bottom: 2%">Meses mínimos</h3>
                     </div>
                     <v-text-field
+                      rounded
                       label="Meses mínimos"
                       outlined
                       dense
@@ -88,6 +99,7 @@
                     <v-file-input
                       label="Fotos"
                       outlined
+                      rounded
                       multiple
                       state
                       chips

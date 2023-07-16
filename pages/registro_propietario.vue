@@ -20,7 +20,12 @@
                     <div class="mx-auto text-left">
                       <h3 style="margin-bottom: 2%">Nombre</h3>
                     </div>
-                    <v-text-field label="Nombre" outlined dense></v-text-field>
+                    <v-text-field
+                      rounded
+                      label="Nombre"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
@@ -28,6 +33,7 @@
                     </div>
                     <v-text-field
                       label="Apellido Paterno"
+                      rounded
                       outlined
                       dense
                     ></v-text-field>
@@ -38,6 +44,7 @@
                     </div>
                     <v-text-field
                       label="Apellido Materno"
+                      rounded
                       outlined
                       dense
                     ></v-text-field>
@@ -48,6 +55,7 @@
                     </div>
                     <v-text-field
                       label="Correo Electrónico"
+                      rounded
                       outlined
                       dense
                     ></v-text-field>
@@ -58,6 +66,7 @@
                     </div>
                     <v-text-field
                       label="Teléfono"
+                      rounded
                       outlined
                       dense
                     ></v-text-field>
@@ -68,6 +77,7 @@
                     </div>
                     <v-text-field
                       label="Dirección"
+                      rounded
                       outlined
                       dense
                     ></v-text-field>
@@ -76,7 +86,12 @@
                     <div class="mx-auto text-left">
                       <h3 style="margin-bottom: 2%">RFC</h3>
                     </div>
-                    <v-text-field label="RFC" outlined dense></v-text-field>
+                    <v-text-field
+                      rounded
+                      label="RFC"
+                      outlined
+                      dense
+                    ></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <div class="mx-auto text-left">
@@ -84,6 +99,7 @@
                     </div>
                     <v-text-field
                       label="Tipo de Propietario"
+                      rounded
                       outlined
                       dense
                     ></v-text-field>
@@ -93,6 +109,7 @@
                       <h3 style="margin-bottom: 2%">Fotos</h3>
                     </div>
                     <v-file-input
+                      rounded
                       label="Fotos"
                       outlined
                       multiple

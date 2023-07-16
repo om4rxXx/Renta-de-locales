@@ -82,14 +82,14 @@
         <v-list-item-title class="font-weight-bold"
           >Información</v-list-item-title
         >
-        <v-list-item href="........">
+        <!-- <v-list-item href="........">
           <v-list-item-icon>
             <v-icon>mdi-account-group</v-icon>
           </v-list-item-icon>
           <v-list-item-title class="font-weight-bold"
             >Usuario</v-list-item-title
-          >
-        </v-list-item>
+          > 
+        </v-list-item>-->
         <v-list-item href="/arrendatarios">
           <v-list-item-icon>
             <v-icon>mdi-account-box-multiple</v-icon>
@@ -110,7 +110,7 @@
     </v-list>
     <template v-slot:append>
       <div class="pa-2">
-        <v-btn elevation="0" block color="white">
+        <v-btn elevation="0" to="/loin" block color="white">
           Logout <v-icon dark right> mdi-logout </v-icon></v-btn
         >
       </div>

@@ -1,37 +1,31 @@
 <template>
   <v-app
     ><v-content>
-      <v-row class="d-flex justify-center no-scroll">
+      <v-row class="d-flex justify-center no-scroll mt-5 pt-5">
         <v-col cols="4">
           <v-card
             elevation="14"
             rounded="200"
-            class="mx-auto my-16 rounded-lg"
+            class="mx-auto mt-14 pt-14 rounded-xl"
             color="white"
           >
             <v-card-text>
               <div>
                 <p class="text-h4 text-color d-flex justify-center">
                   <v-avatar class="pa-10" size="160">
-                    <img src="~/assets/ALY.svg" alt="John" />
+                    <img
+                      src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
+                      alt="John"
+                    />
                   </v-avatar>
                 </p>
 
-                <h1
-                  style="
-                    font-family: 'League Spartan', sans-serif;
-                    font-weight: 900;
-                  "
-                  class="py-5 d-flex justify-center"
-                >
-                  Iniciar Sesión
-                </h1>
+                <h1 class="py-5 d-flex justify-center">Iniciar Sesión</h1>
               </div>
               <div class="mx-15 px-2 mb-3 d-flex justify-center">
                 <v-text-field
                   rounded
                   dense
-                  v-model="email"
                   label="E-mail"
                   outlined
                   color="primary"
@@ -69,11 +63,7 @@
                   color="#3D76F2"
                   :loading="loading"
                   rounded
-                  style="
-                    font-family: 'League Spartan', sans-serif;
-                    font-weight: 700;
-                  "
-                  @click="myFunction()"
+                  to="/"
                 >
                   Iniciar Sesión
                 </v-btn>
