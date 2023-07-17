@@ -158,7 +158,7 @@
         >
       </v-row>
       <div class="d-flex justify-start mt-5 ml-10">
-        <h1>Dosponibles</h1>
+        <h1>Disponibles</h1>
       </div>
       <v-row class="d-flex justify-start mx-4">
         <v-col cols="3">
